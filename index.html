@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Maduro</title>
+    <link rel="shortcut icon" href="/public/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+
+<body id="content">
+
+    <header>
+        <div class="left">
+            <a href="#mainPortfolio" id="logo">
+                <img src="/public/logo2.png" alt="">
+            </a>
+        </div>
+        <div class="mid">
+            <ul>
+                <li><a href="#about" id="aboutHeader">About</a></li>
+                <li><a href="#projects" id="projectsHeader">Projects</a></li>
+                <li><a href="#contactMe" id="contactHeader">Contact</a></li>
+            </ul>
+        </div>
+        <div class="hamburguerMenu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="right">
+            <input type="text" placeholder="Search" id="searchInput">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </header>
+    <div class="darkBackground"></div>
+    <div class="toggleBox">
+        <input type="text" placeholder="Search" id="searchInputToggle" onkeyup="highlightSearch()">
+        <div class="iconContainer">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <ul>
+            <li><a href="#about" id="aboutHeader">About</a></li>
+            <li><a href="#projects" id="projectsHeader">Projects</a></li>
+            <li><a href="#contactMe" id="contactHeader">Contact</a></li>
+        </ul>
+    </div>
+    <main id="mainPortfolio">
+        <div class="leftMain">
+            <div class="upperMain">
+                <h1>I'M <span class="name">Angel Maduro</span></h1>
+                <div class="leftMainText">
+                    <p>Passionate Junior Full-Stack Web Developer on a journey to contribute to the
+                        ever-evolving world of web development.</p->
+                </div>
+            </div>
+            <a href="#contactMe" id="contactMeButton">Contact Me</a>
+        </div>
+        <div class="rightMain">
+            <img src="/public/angelPic.png" alt="Angel Maduro Pic">
+        </div>
+    </main>
+    <div class="socialMedia">
+        <div class="socialMediaContent">
+            <div class="line"></div>
+            <a href="https://www.linkedin.com/in/angel-maduro-cs/" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/angelmaduro979" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </div>
+    <section class="aboutSection" id="about">
+        <div class="title">
+            <h2>About</h2>
+        </div>
+        <div class="sectionContainer">
+            <div class="lineLeft"></div>
+            <div class="textAbout">
+                <p>I am an enthusiastic and committed Full-Stack Developer with a solid background in
+                    <span class="skill">React.js</span>,
+                    <span class="skill">JavaScript</span>,
+                    <span class="skill">HTML5</span>, <span class="skill">CSS</span>, <span class="skill">NodeJS</span>,
+                    and <span class="skill">MySQL</span>. My path in web
+                    development started with a curiosity about how the web
+                    operates, which swiftly evolved into a deep passion for crafting seamless and dynamic user
+                    experiences.
+
+                    Alongside my technical expertise, I have excellent written and spoken English skills (C2 level),
+                    which
+                    have been invaluable in working with diverse teams and stakeholders. One of my key strengths is my
+                    ability to articulate complex ideas clearly and effectively.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="skillsSection">
+
+        <h2>My Skills</h2>
+
+        <div class="container">
+            <div class="card" id="reactCard">
+                <i class="fa-brands fa-react" id="react"></i>
+                <span>React.js</span>
+            </div>
+            <div class="card" id="nodeCard">
+                <i class="fa-brands fa-node" id="node"></i>
+            </div>
+            <div class="card" id="jsCard">
+                <i class="fa-brands fa-js" id="js"></i>
+                <span>JavaScript</span>
+            </div>
+            <div class="card" id="cssCard">
+                <i class="fa-brands fa-css3-alt" id="css"></i>
+                <span>CSS</span>
+            </div>
+            <div class="card" id="htmlCard">
+                <i class="fa-brands fa-html5" id="html"></i>
+                <span>HTML5</span>
+            </div>
+            <div class="card" id="sqlCard">
+                <i class="fa-solid fa-database" id="sql"></i>
+                <span>MySQL</span>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="projectSection" id="projects">
+        <h2>Projects</h2>
+        <div class="containerProject">
+
+            <!-- Crunchyroll -->
+
+            <div class="outerCard">
+                <div class="card">
+                    <div class="slider" id="crunchySliderImages">
+                        <img src="/public/slider1/image1.png" alt="">
+                        <img src="/public/slider1/image2.png" alt="">
+                        <img src="/public/slider1/image3.png" alt="">
+                        <img src="/public/slider1/image4.png" alt="">
+                        <img src="/public/slider1/image5.png" alt="">
+                        <img src="/public/slider1/image6.png" alt="">
+                        <img src="/public/slider1/image7.png" alt="">
+                        <img src="/public/slider1/image8.png" alt="">
+                        <img src="/public/slider1/image9.png" alt="">
+                    </div>
+                </div>
+                <div class="focusCardInfo">
+                    <div class="leftSliderText">
+                        <h3>CrunchyRoll Replica</h3>
+                        <div class="techUsed">
+                            <i class="fa-solid fa-database"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-js"></i>
+                            <i class="fa-brands fa-node"></i>
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="videoButton" id="crunchyButtonVideo"><i class="fa-solid fa-play"></i>Check the
+                            video</button>
+                        <a href="https://github.com/angelmaduro979/animeLoginApi" target="_blank">See more <i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+
+                </div>
+                <div class="leftRight">
+                    <i class="fa-solid fa-chevron-left" id="leftCrunchy"></i>
+                    <i class="fa-solid fa-chevron-right" id="rightCrunchy"></i>
+                </div>
+            </div>
+
+            <div class="video" id="crunchyVideo">
+                <div class="xcontainer">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <iframe src="https://www.youtube.com/embed/iW58TgBDQIk?si=HKV2O88YW1F_dfXg" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!-- Smartwatch -->
+
+            <div class="outerCard" id="clockContainer">
+                <div class="card" id="clockCard">
+                    <div class="slider" id="clockSlider">
+                        <img src="/public/slider2/image1.png" alt="">
+                        <img src="/public/slider2/image2.png" alt="">
+                    </div>
+                </div>
+                <div class="focusCardInfo">
+                    <div class="leftSliderText">
+                        <h3>Smartwatch look-a-like Digital Watch</h3>
+                        <div class="techUsed">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-js"></i>
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+
+                    </div>
+                    <div class="buttons">
+                        <button class="videoButton" id="watchVideoButton"><i class="fa-solid fa-play"></i>Check the
+                            video</button>
+                        <a href="https://github.com/angelmaduro979/clock" target="_blank">See more <i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+
+                </div>
+                <div class="leftRight">
+                    <i class="fa-solid fa-chevron-left" id="clockLeft"></i>
+                    <i class="fa-solid fa-chevron-right" id="clockRight"></i>
+                </div>
+
+            </div>
+            <div class="video" id="smartwatchVideo">
+                <div class="xcontainer">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <iframe src="https://www.youtube.com/embed/DccrHAgYLk4?si=WecB7wvF7xTSt6vf" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!-- ContactList -->
+
+            <div class="outerCard" id="contactListContainer">
+                <div class="card">
+                    <div class="slider" id="contactHubSlider">
+                        <img src="/public/slider3/image1.png" alt="">
+                        <img src="/public/slider3/image2.png" alt="">
+                        <img src="/public/slider3/image3.png" alt="">
+                        <img src="/public/slider3/image4.png" alt="">
+                        <img src="/public/slider3/image5.png" alt="">
+                        <img src="/public/slider3/image6.png" alt="">
+                    </div>
+                </div>
+                <div class="focusCardInfo">
+                    <div class="leftSliderText">
+                        <h3>Contact List (CRUD).</h3>
+                        <div class="techUsed">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-js"></i>
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+
+                    </div>
+                    <div class="buttons">
+                        <button class="videoButton" id="contactVideoButton"><i class="fa-solid fa-play"></i>Check the
+                            video</button>
+                        <a href="https://github.com/angelmaduro979/contactHub" target="_blank">See more <i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+
+                    <div class="leftRight">
+                        <i class="fa-solid fa-chevron-left" id="contactHubLeft"></i>
+                        <i class="fa-solid fa-chevron-right" id="contactHubright"></i>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="video" id="contactHubVideo">
+                <div class="xcontainer">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/prxNZ7Zwg2M?si=HGlwyDG91GM-eUmJ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!-- TodoList -->
+
+            <div class="outerCard">
+                <div class="card">
+                    <div class="slider" id="todoListSlider">
+                        <img src="/public/slider4/image1.png" alt="">
+                        <img src="/public/slider4/image2.png" alt="">
+                        <img src="/public/slider4/image3.png" alt="">
+                    </div>
+                </div>
+                <div class="focusCardInfo">
+                    <div class="leftSliderText">
+                        <h3>To-Do List made with HTML,<br> CSS and JavaScript.</h3>
+                        <div class="techUsed">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-js"></i>
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+
+                    </div>
+                    <div class="buttons">
+                        <button class="videoButton" id="todoListButton"><i class="fa-solid fa-play"></i>Check the
+                            video</button>
+                        <a href="https://github.com/angelmaduro979/todo-list" target="_blank">See more <i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="leftRight">
+                    <i class="fa-solid fa-chevron-left" id="leftTodo"></i>
+                    <i class="fa-solid fa-chevron-right" id="rightTodo"></i>
+                </div>
+
+
+            </div>
+
+            <div class="video" id="todoListVideoContainer">
+                <div class="xcontainer">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <iframe  src="https://www.youtube.com/embed/DmqdhgyaT_E?si=UKW60n6dhJRGpeHS"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contactMe">
+        <div class="contactMeTitle">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="upper">
+            <div class="email">
+                <a href="mailto:angelmaduro979@gmail.com?subject=Meeting%20Request&body=Hi,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20know:%20(add%20the%20information%20here)"
+                    target="_blank">
+                    <i class="fa-regular fa-envelope"></i>
+                    angelmaduro979@gmail.com
+                </a>
+            </div>
+
+            <div class="phone">
+                <a href="tel:+541122506741" target="_blank">
+                    <i class="fa-solid fa-phone"></i>
+                    (+54) 11-2250-6741
+                </a>
+            </div>
+
+        </div>
+        <div class="location">
+            <a href="https://maps.app.goo.gl/evP9UUoiXnxN3rhQ8" target="_blank">
+                <i class="fa-solid fa-location-dot"></i>
+                Cdad. Autónoma de Buenos Aires, Argentina
+            </a>
+        </div>
+    </section>
+    <footer>
+        <div class="socialMediaFooter">
+            <a href="https://www.linkedin.com/in/angel-maduro-cs/" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/angelmaduro979" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <h2>"Thanks for Scrolling"</h2>
+    </footer>
+
+    <script src="app.js"> </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1073 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primaryColor: #34353A;
+    --secundaryColor: #3D3E42;
+    --terciaryColor: #31333B;
+    --quaternaryColor: #FFC86B;
+    --fontColor: #F9F9F9;
+    --font: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    background-color: var(--secundaryColor);
+    font-family: var(--font);
+    box-sizing: border-box;
+}
+
+/* Header */
+
+.darkBackground{
+    position: fixed;
+    min-height:100vh;
+    min-width: 100%;
+    z-index: 200;
+    background-color: #23252bba;
+    top: 0;
+    display: none;
+    
+}
+header {
+    background-color: var(--primaryColor);
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px 10px 60px;
+    box-sizing: border-box;
+    top: 0;
+    z-index: 100;
+}
+
+header img {
+    width: 50px;
+}
+
+.mid ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.mid a {
+    text-decoration: none;
+    color: var(--fontColor);
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.mid a:hover {
+    color: var(--quaternaryColor);
+}
+
+.right {
+    position: relative;
+
+}
+
+.right input {
+    z-index: 1;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #4b4d53;
+    border: none;
+    color: var(--fontColor);
+    font-size: 15px;
+}
+
+.right input::placeholder {
+    color: #B0B1B1;
+}
+
+.right input:focus {
+    outline: none;
+}
+
+.right i {
+    position: absolute;
+    z-index: 10;
+    right: 15px;
+    top: 10px;
+    color: #B0B1B1;
+    font: 10px;
+}
+
+.right i:hover {
+    cursor: pointer;
+    color: white;
+    transform: scale(1.1, 1.1);
+}
+
+.hamburguerMenu {
+    display: none;
+}
+
+.highlight {
+    background-color: orange;
+}
+
+.toggleBox {
+    display: none;
+}
+
+/* Body */
+
+/* Main */
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    margin-top: 10px;
+    box-sizing: border-box;
+    align-items: end;
+    padding-left: 200px;
+    box-shadow: 0px 10px 10px 2px #2D2F35;
+
+}
+
+main .leftMain {
+    height: 100%;
+    gap: 40px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+main .leftMain h1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--fontColor);
+}
+
+main .leftMain h1 span {
+    font-size: 60px;
+    font-weight: 400;
+    color: var(--quaternaryColor);
+}
+
+main .leftMain .leftMainText {
+    width: 400px;
+}
+
+main .leftMain p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--fontColor);
+    text-align: justify;
+
+}
+
+main .leftMain a {
+    text-decoration: none;
+    border: 4px solid var(--quaternaryColor);
+    border-radius: 7px;
+    padding: 10px;
+    color: var(--quaternaryColor);
+    width: fit-content;
+    font-size: 20px;
+    transition: ease-in-out;
+}
+
+main .leftMain a:hover {
+    cursor: pointer;
+    border: 4px solid var(--fontColor);
+    color: var(--fontColor);
+    transform: scale(1.05, 1.05);
+}
+
+main .rightMain {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.rightMain img {
+    height: 600px;
+}
+
+.socialMedia {
+    position: relative;
+}
+
+.socialMediaContent {
+    position: absolute;
+    right: 100px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.socialMediaContent .line {
+    border-left: 3px solid var(--quaternaryColor);
+    height: 80px;
+}
+
+.socialMediaContent i {
+    color: var(--fontColor);
+    font-size: 25px;
+}
+
+.socialMediaContent i:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+
+/* Sections */
+
+/* About */
+
+section {
+    padding: 80px 200px 0px 200px;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutSection {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutSection .title {
+    width: 100%;
+}
+
+section h2 {
+    font-size: 50px;
+    color: var(--fontColor);
+    font-weight: 400;
+}
+
+.aboutSection .sectionContainer {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+.aboutSection .sectionContainer .lineLeft {
+    border-top: 3px solid var(--quaternaryColor);
+    width: 180px;
+}
+
+.aboutSection .sectionContainer .textAbout {
+    transform: translateY(-9%);
+    width: 80%;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.aboutSection .sectionContainer .textAbout p {
+    color: var(--fontColor);
+}
+
+.textAbout .skill {
+    color: var(--quaternaryColor);
+}
+
+/* Section Skills */
+
+.skillsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    box-sizing: border-box;
+
+}
+
+
+.skillsSection .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    height: 100vh;
+    column-gap: 60px;
+    row-gap: 20px;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.skillsSection .container .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    background-color: #313131;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+}
+
+.skillsSection .container .card span {
+    font-size: 30px;
+    color: var(--fontColor);
+}
+
+.skillsSection .container .card i {
+    font-size: 100px;
+}
+
+/* Icons Skills */
+#react {
+    color: #5ED3F3;
+}
+
+#node {
+    color: #7FC728;
+}
+
+
+#js {
+    color: #EFD81D;
+}
+
+#css {
+    color: #0D6BB2;
+}
+
+#html {
+    color: #F63135;
+}
+
+#sql {
+    color: #CB5E01;
+}
+
+/* Hover cards */
+
+#sqlCard:hover {
+    background: linear-gradient(to right, #e99b57, #CB5E01);
+
+    #sql {
+        color: var(--fontColor);
+    }
+}
+
+#reactCard:hover {
+    background: linear-gradient(to right, #5ED3F3, #6446be);
+
+    #react {
+        color: var(--fontColor);
+    }
+}
+
+#nodeCard:hover {
+    background: linear-gradient(to right, #7FC728, #497217);
+
+    #node {
+        color: var(--fontColor);
+    }
+}
+
+#jsCard:hover {
+    background: linear-gradient(to right, #EFD81D, #a09013);
+
+    #js {
+        color: var(--fontColor);
+    }
+}
+
+#cssCard:hover {
+    background: linear-gradient(to right, #0D6BB2, #084674);
+
+    #css {
+        color: var(--fontColor);
+    }
+}
+
+#htmlCard:hover {
+    background: linear-gradient(to right, #F63135, #9f1e20);
+
+    #html {
+        color: var(--fontColor);
+    }
+}
+
+/* Projects */
+
+.projectSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.projectSection .containerProject {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: 100%;
+    justify-content: space-around;
+    row-gap: 50px;
+    position: relative;
+}
+
+.projectSection .containerProject .outerCard, .video{
+    width: 900px;
+    max-width: 1000px;
+    height: 600px;
+    background-color: #313131;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+}
+
+.video{
+    width: 900px;
+    max-width: 1000px;
+    height: 600px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #313131;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    z-index: 300;
+    top: 50px;
+
+}
+
+.video iframe{
+ width: 100% ;
+ height: 100%;
+}
+
+.video .xcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    padding-right: 30px;
+    box-sizing: border-box;
+    top: 30px;
+}
+
+.video .xcontainer i{
+    color:var(--fontColor);
+    font-size: 25px;
+}
+
+.video .xcontainer i:hover{
+    color: var(--quaternaryColor);
+    cursor: pointer;
+}
+
+
+
+.projectSection .containerProject .outerCard .card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 500px;
+    min-height: fit-content;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+
+}
+
+.projectSection .containerProject .outerCard .card .slider {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    height: fit-content;
+    min-height: fit-content;
+    max-height: 100%;
+    width: fit-content;
+    align-items: center;
+    transition: transform 0.5s ease;
+
+}
+
+.projectSection .containerProject .outerCard .card .slider img {
+    width: 100%;
+    min-height: 500px;
+    min-width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+
+.projectSection .containerProject .leftRight {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    gap: 80%;
+    bottom: 300px;
+    left: 0;
+}
+
+.projectSection .containerProject .leftRight i {
+    font-size: 30px;
+    color: var(--fontColor);
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #46474ba5;
+}
+
+.projectSection .containerProject .leftRight i:hover {
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #7e8088a5;
+    cursor: pointer;
+}
+
+
+.focusCardInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    max-height: fit-content;
+    margin-top: 10px;
+}
+
+.focusCardInfo .leftSliderText {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.focusCardInfo .leftSliderText h3 {
+    color: var(--quaternaryColor);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.focusCardInfo .leftSliderText p {
+    font-size: 12px;
+    width: 400px;
+    color: var(--fontColor);
+}
+
+.focusCardInfo a {
+    text-decoration: none;
+    background-color: #395498;
+    color: var(--fontColor);
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.focusCardInfo .videoButton{
+    padding: 8px;
+    display: flex;
+    gap: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #FF0000;   
+    color: var(--fontColor);
+    border: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+}
+
+.focusCardInfo .videoButton:hover{
+    background-color: #ff5050;   
+    color: var(--fontColor);
+    cursor: pointer;
+}
+
+
+.focusCardInfo a:hover {
+    cursor: pointer;
+    background-color: #5968BA;
+    
+}
+
+.focusCardInfo a i {
+    font-size: 20px;
+}
+
+.techUsed {
+    display: flex;
+    gap: 20px;
+}
+
+.techUsed i {
+    font-size: 20px;
+    color: var(--fontColor);
+}
+
+
+
+
+/*Contact Me Section*/
+
+#contactMe {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid var(--quaternaryColor);
+    border-bottom: 2px solid var(--quaternaryColor);
+    margin-top: 100px;
+    min-height: fit-content;
+    height: 300px;
+    gap: 40px;
+    padding-bottom: 20px;
+
+}
+
+.contactMeTitle {
+    position: absolute;
+    bottom: 370px;
+    z-index: 10;
+    background-color: var(--secundaryColor);
+    padding: 0 20px 0 20px;
+}
+
+.upper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.phone,
+.email,
+.location {
+    display: flex;
+    gap: 10px;
+}
+
+.phone i,
+.email i,
+.location i {
+    font-size: 20px;
+    color: var(--fontColor);
+}
+
+.phone a,
+.email a,
+.location a {
+    text-decoration: none;
+    color: var(--quaternaryColor);
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: var(--primaryColor);
+    font-size: 20px;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 100px;
+}
+
+footer .socialMediaFooter {
+    position: absolute;
+    top: -35px;
+    background-color: var(--secundaryColor);
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+footer .socialMediaFooter a i {
+    font-size: 35px;
+    color: var(--fontColor);
+}
+
+footer h2 {
+    font-size: 40px;
+    color: var(--quaternaryColor);
+    font-weight: 400;
+    ;
+}
+@media screen and (max-width:1350px){
+    section{
+        padding: 80px 20px 0px 20px;
+    }
+
+    main{
+        padding-left: 100px;  
+    }
+    main .rightMain img{
+        height: 400px;
+    }
+
+    
+    .aboutSection {
+        gap: 70px
+    }
+
+    .title {
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+
+    .aboutSection .sectionContainer .lineLeft {
+        display: none;
+
+    }
+
+    .aboutSection .sectionContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skillsSection .container {
+        grid-template-columns: 1fr 1fr;
+        min-height: fit-content;
+        height: fit-content;
+    }
+    .projectSection .containerProject .outerCard {
+        width: 800px;
+        max-width: 800px;
+        height: 600px;
+        background-color: #313131;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .video {
+        width: 800px;
+        max-width: 800px;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    main {
+        flex-direction: column;
+        padding-left: 0;
+        align-items: center;
+        height: fit-content;
+        margin-top: 90px;
+
+
+    }
+
+    main .leftMain {
+        height: fit-content;
+        width: fit-content;
+        align-items: center;
+
+    }
+
+    .rightMain {
+        height: fit-content;
+    }
+
+    main .rightMain img {
+        height: 300px;
+    }
+
+    .upperMain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .leftMain .leftMainText {
+        width: 500px;
+    }
+
+
+    section {
+        padding: 80px 100px 0px 100px;
+    }
+
+
+    .skillsSection {
+        min-height: fit-content;
+    }
+
+    .skillsSection .container {
+        grid-template-columns: 1fr 1fr;
+        min-height: fit-content;
+        height: fit-content;
+    }
+
+    .projectSection .containerProject .outerCard, .video {
+        width: 500px;
+    }
+
+    .focusCardInfo .leftSliderText {
+        width: 50%;
+    }
+
+    .focusCardInfo .leftSliderText h3 {
+        font-size: 20px;
+    }
+
+
+}
+
+@media screen and (max-width:900px) {
+
+    header img {
+        width: 30px;
+    }
+
+    .mid ul {
+        gap: 20px;
+    }
+
+    .mid a {
+        font-size: 12px;
+    }
+
+    .skillsSection .container {
+        grid-template-columns: 1fr;
+    }
+
+    .skillsSection .container .card {
+        width: 350px;
+        height: 350px;
+    }
+
+    .phone i,
+    .email i,
+    .location i,
+    .phone a,
+    .email a,
+    .location a {
+        font-size: 15px;
+    }
+}
+
+
+
+@media screen and (max-width:700px) {
+    section{
+        padding: 80px 0 0 0;
+    }
+    header {
+        padding: 10px 50px 10px 50px;
+    }
+
+    .mid ul {
+        gap: 10px;
+    }
+
+    .right input {
+        padding: 8px;
+    }
+
+    main .leftMain h1 {
+        font-size: 20px;
+    }
+
+    main .leftMain h1 span {
+        font-size: 40px;
+    }
+
+    main .leftMain .leftMainText {
+        width: 300px;
+    }
+
+
+    main .leftMain p {
+        font-size: 15px;
+    }
+
+    main .leftMain a {
+        font-size: 15px;
+    }
+
+    .projectSection .containerProject .outerCard, .video {
+        width: 100%;
+    }
+
+    .projectSection .containerProject .leftRight {
+        gap: 60%;
+    }
+
+    #contactMe .upper {
+        flex-direction: column;
+    }
+
+    footer h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    
+
+    .hamburguerMenu {
+        display: block;
+        font-size: 20px;
+        color: var(--fontColor);
+    }
+
+    .hamburguerMenu:hover {
+        cursor: pointer;
+        color: var(--quaternaryColor);
+    }
+
+    header .right {
+        display: none;
+    }
+
+    .toggleBox {
+        flex-direction: column;
+        position: fixed;
+        background-color: var(--primaryColor);
+        padding: 20px;
+        gap: 10px;
+        right: 0;
+        top: 50px;
+        z-index: 100;
+    }
+
+    .toggleBox input {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #4b4d53;
+        border: none;
+        color: var(--fontColor);
+        font-size: 12px;
+        
+    }
+
+    .toggleBox input:focus{
+        outline: none;
+    }
+
+    .toggleBox i{
+        position: absolute;
+        top: -35px;
+        right: 8px;
+    }
+
+    .iconContainer{
+        position: relative;
+    }
+
+    .toggleBox ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .toggleBox li a{
+        text-decoration: none;
+        color: var(--fontColor);
+    }
+
+    .toggleBox li a:hover{
+        color: var(--quaternaryColor);
+    }
+
+    .mid{
+        display: none;
+    }
+
+    
+
+    .socialMediaContent{
+        right: 8%;
+    }
+
+    .skillsSection .container .card{
+        width: 200px;
+        height: 200px;
+    }
+
+    .skillsSection .container .card i{
+        font-size: 50px;
+    }
+
+}
+
+@media screen and (min-width:600px) {
+    .toggleBox input, .toggleBox i, .toggleBox ul{
+        display: none;
+    }
+}
+
+@media screen and (max-width:450px){
+
+    main .leftMain .upperMain{
+        width: 100%;
+    }
+
+    main .leftMain .upperMain span{
+        
+        font-size: 35px;
+    
+    }
+    main .rightMain img{
+        height: 200px;
+    }
+
+  
+    .projectSection .containerProject .outerCard, .video{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contactMeTitle h2{
+        font-size: 30px;
+    }
+}
+
